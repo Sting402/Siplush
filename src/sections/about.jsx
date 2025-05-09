@@ -1,4 +1,5 @@
 import "../style/about.css";
+import aboutimg from "../assets/img/About.png"
 
 const About = () => {
   return (
@@ -28,7 +29,7 @@ const About = () => {
       <div className="about-media">
         {/* Replace src with your image or video */}
         <img
-          src="../src/assets/img/About.png"
+          src={aboutimg}
           alt="SIPLUSH Lifestyle - A lifestyle brand inspired by California"
           className="about-image"
         />
