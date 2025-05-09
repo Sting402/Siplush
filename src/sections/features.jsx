@@ -1,11 +1,11 @@
 import React, { useState,useEffect } from "react";
 import { create } from "zustand";
 import "../style/features.css";
-import tImage from "src/assets/img/T.png";
-import nfmImage from "src/assets/img/NFM.png";
-import lrImage from "src/assets/img/LR.png";
-import ebImage from "src/assets/img/EB.png";
-import chfImage from "src/assets/img/CHF.png";
+import tImage from "../src/assets/img/T.png";
+import nfmImage from "../src/assets/img/NFM.png";
+import lrImage from "../src/assets/img/LR.png";
+import ebImage from "../src/assets/img/EB.png";
+import chfImage from "../src/assets/img/CHF.png";
 
 const useCardStore = create((set) => ({
   clickCounts: JSON.parse(localStorage.getItem("cardClickCounts")) || {},
