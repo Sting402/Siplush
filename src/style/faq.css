@@ -1,0 +1,231 @@
+/* General styles for the accordion container */
+.FAQ-section{
+  background-color: #f7f7f7;
+  display: block;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 60px;
+  min-height: 400px;
+}
+
+.faq-header{
+  text-align: center;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 30px;
+  margin-top: -30px;
+}
+.accordion-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 10%;
+  box-sizing: border-box;
+}
+
+/* Adjust accordion container for smaller screens */
+.accordion-container {
+  width: 100%;
+  font-family: 'Megante', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin: 20px 0;
+  max-width: 1200px; /* Restrict max width */
+}
+
+/* Styles for each accordion item */
+.accordion-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Accordion header (clickable area) */
+.accordion-header {
+  cursor: pointer;
+  padding: 15px;
+  font-weight: bold;
+  background-color: #FEDEC4;
+  text-align: left;
+  transition: background-color 0.3s ease;
+  border-bottom: 1px solid #ddd;
+  color: #000;
+  font-family: 'Megante', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+.accordion-item:hover{
+    transform: scale(1.025);
+}
+.accordion-header.active {
+  background-color: #FEDEC4;
+  
+}
+
+/* Accordion content */
+.accordion-content {
+  padding: 15px;
+  background-color: #f9f9f9;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+  display: none;
+  margin-bottom: 10px;
+}
+
+
+.accordion-content.open {
+  display: block;
+}
+
+/* Sub-accordion container */
+.sub-accordion-container {
+  padding-left: 20px;
+}
+
+/* Sub-accordion item styles */
+.sub-accordion-item {
+  background-color: #fff;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.sub-accordion-header {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #fedec48d;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+
+.sub-accordion-header {
+  background-color: #FEDEC4;
+  font-family: 'Megante', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+.sub-accordion-header.active {
+  background-color: #FEDEC4;
+  font-family: 'Megante', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.sub-accordion-content {
+  padding: 10px;
+  background-color: #f7f7f7;
+  color: #444;
+  font-size: 14px;
+  display: none;
+}
+
+.sub-accordion-content.open {
+  display: block;
+}
+
+.sub-accordion-content p {
+  margin: 5px 0;
+  line-height: 1.6;
+}
+.faq-header{
+  padding-top: 100px;
+}
+
+/* Responsive styles */
+@media (max-width: 2680px) {
+  .accordion-wrap {
+      padding: 15px;
+  }
+
+  .accordion-header,
+  .accordion-content {
+    padding: 10px;
+    width: 960px;
+  }
+
+  .accordion-header {
+      font-size: 16px;
+      padding: 12px;
+  }
+
+  .accordion-content {
+      font-size: 13px;
+  }
+}
+@media (max-width: 1200px) {
+  .accordion-wrap {
+      padding: 15px;
+  }
+
+  .accordion-header,
+  .accordion-content {
+    padding: 10px;
+    width: 760px;
+  }
+
+  .accordion-header {
+      font-size: 16px;
+      padding: 12px;
+  }
+
+  .accordion-content {
+      font-size: 13px;
+  }
+}
+@media (max-width: 960px) {
+  .accordion-wrap {
+      padding: 15px;
+  }
+
+  .accordion-header,
+  .accordion-content {
+    padding: 10px;
+    width: 500px;
+  }
+
+  .accordion-header {
+      font-size: 16px;
+      padding: 12px;
+  }
+
+  .accordion-content {
+      font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .accordion-wrap {
+    padding: 20px 5%;
+  }
+
+  .accordion-header,
+  .accordion-content {
+    padding: 10px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 520px) {
+  .FAQ-section{
+    width: 100%;
+    padding: 0px 0px 0px 50px;
+   
+    align-items: center;
+  }
+  .accordion-wrap {
+    padding: 10px 2%;
+    width: 80%;
+  }
+
+  .accordion-header,
+  .accordion-content {
+    padding: 8px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .accordion-wrap {
+    padding: 10px 2%;
+  }
+
+  .accordion-header,
+  .accordion-content {
+    padding: 8px;
+    font-size: 12px;
+  }
+}

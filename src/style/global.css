@@ -1,0 +1,232 @@
+:root {
+  --primary-color: #FEDEC4;
+  --primary-color-hover: #FF9800;
+  --background-color: #ffffff;
+  --text-color: #000;
+  --a-color: rgba(0, 0, 0, 0.87);
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* Responsive Color Schemes */
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-color: #ffffff;
+    --text-color: #060606;
+  }
+}
+
+/* Base Styles */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+ 
+}
+
+section {
+  display: flex;
+  align-items: center;
+}
+
+/* Typography */
+@font-face {
+  font-family: 'TT-Chocolates-ExtraLight';
+  src: url('/public/font/TT Chocolates/ttf/TT-Chocolates-ExtraLight.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+p, content, body {
+  font-family: 'TT-Chocolates-ExtraLight', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+@font-face {
+  font-family: 'TT-Chocolates-ExtraBold';
+  src: url('/public/font/TT Chocolates/ttf/TT-Chocolates-ExtraBold.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+H1, a {
+  font-family: 'TT-Chocolates-ExtraBold', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Megante';
+  src: url('/public/font/Megante/megante_font_WogjU9VW0X.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+h2, h3, h4, h5, h6,a, button {
+  font-family: 'Megante', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--a-color);
+}
+
+a:hover {
+  color: var(--primary-color-hover);
+}
+
+/* Buttons */
+button {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  background-color: #b8e0fe;
+  color: inherit;
+  font: bold 1em/1.5 inherit;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  color: var(--text-color);
+}
+
+button:hover {
+  background-color: #99c3e4;
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Layouts */
+@media (max-width: 1440px) {
+  h1 {
+    font-size: 2.8em;
+  }
+}
+
+@media (max-width: 1200px) {
+  section {
+    flex-direction: column;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .cta-section {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2em;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+
+  .join-media-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .gryphon-gallery-container {
+    width: 100%;
+  }
+
+  .hero-section {
+    height: 70vh;
+  }
+
+  .griffin-card-grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+  }
+
+  .about-container {
+    padding: 0.5rem;
+  }
+
+  .cta-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 640px) {
+  section {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.9em;
+  }
+
+  button {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .cta-container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.7em;
+  }
+}
+
+@media (max-width: 414px) {
+  h1 {
+    font-size: 1.6em;
+  }
+
+  .hero-section {
+    height: 65vh;
+  }
+}
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 1.4em;
+  }
+}

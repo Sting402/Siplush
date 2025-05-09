@@ -1,0 +1,143 @@
+.cta2-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background: url('../assets/img/cta.png') no-repeat center center/ cover; /* Replace with actual image path */
+    text-align: left;
+    overflow: hidden;
+ height: 400px;
+  }
+  
+  .cta2-content {
+    margin-top: 10%;
+    z-index: 2;
+    max-width: 600px;
+    color: rgb(255, 255, 255);
+    margin-left: 20%;
+  }
+  
+  .cta2-heading {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color:#fff;
+    width: 80%;
+  }
+  
+  .cta2-text {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cta2-button {
+    display: inline-block;
+    background: #b8e0fe;
+    color: black;
+    padding: 12px 24px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cta2-button:hover {
+    background: #99c3e4;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .cta2-decor {
+    position: absolute;
+    width: 2000px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.057);
+    border-radius: 50%;
+    bottom: -50px;
+    right: -50px;
+    z-index: 1;
+    filter: blur(30px);
+  }
+  
+  @media (max-width: 1920px) {
+    .cta2-container {
+      height: 600px;
+    }
+    
+  }
+  @media (max-width: 960px) {
+    .cta2-container {
+      height: 500px;
+    }
+    .cta2-heading {
+      font-size: 1.8rem;
+      margin-bottom: 1.9rem;
+      margin-top: 2.4rem;
+      margin-left: -100px;
+    }
+    
+    .cta2-button {
+      display: inline-block;
+      padding: 9px 18px;
+      margin-bottom: 50px;
+      border-radius: 30px;
+      font-size: 1.0rem;
+      margin-left: -100px;
+    }
+    
+  }
+  @media (max-width: 768px) {
+    .cta2-container {
+      max-height: 400px;
+    }
+    .cta2-heading {
+      font-size: 1.6rem;
+      margin-bottom: 1.9rem;
+      margin-top: 1.9rem;
+      margin-left: -100px;
+    }
+    
+    .cta2-button {
+      display: inline-block;
+      padding: 6px 12px;
+      margin-bottom: 50px;
+      border-radius: 30px;
+      font-size: 0.6rem;
+      margin-left: -100px;
+    }
+    .join-p{
+      width: 70%;
+      padding-left: 3px;
+    }
+    
+  }
+  @media (max-width: 520px) {
+    .cta2-container {
+      max-height: 300px;
+    }
+    .cta2-heading {
+      font-size: 1.2rem;
+      margin-bottom: 1.9rem;
+      margin-top: 1.9rem;
+    }
+    .cta2-content {
+      margin-top: 10%;
+      z-index: 2;
+      color: rgb(255, 255, 255);
+      margin-left: 25%;
+    }
+    .cta2-button {
+      display: inline-block;
+      padding: 6px 12px;
+      margin-bottom: 50px;
+      border-radius: 30px;
+      font-size: 0.6rem;
+    }
+    .join-p{
+      width: 180px;
+    }
+  }

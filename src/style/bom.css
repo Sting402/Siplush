@@ -1,0 +1,80 @@
+.bom-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #e4e0da;
+}
+
+.bom-media {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  max-height: 100%; /* Better for responsiveness */
+}
+
+.bom-image,
+.bom-video {
+  width: 93%;
+  object-fit: cover;
+  padding: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 960px) {
+  .bom-section {
+    align-items: center;
+    justify-content: space-between;
+    padding: 3% 0;
+  }
+
+  .bom-content {
+    width: 80%;
+    color: #222;
+    font-family: 'Megante', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  }
+
+  .bom-title {
+    color: #000; /* Simplified 'black' to hex */
+    padding: 4px 16px;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 0 0 30px -40px; /* Consolidated margin */
+    font-weight: bold;
+  }
+
+  .bom-content p {
+    font-size: 0.8rem; /* Converted 80% to rem for consistency */
+    line-height: 1.6;
+    margin: 0 0 12px 40px; /* Consolidated margin */
+    padding: 10px;
+  }
+
+  .bom-content strong {
+    font-weight: bold; /* Already default, but kept for clarity */
+  }
+
+  .bom-media {
+    max-height: 300px; /* Specific limit for smaller screens */
+    border-radius: 8px;
+  }
+
+  /* Corrected class names to match .bom- prefix */
+  .bom-image,
+  .bom-video {
+    width: 80%;
+    height: auto; /* Allows natural scaling */
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bom-section {
+    background-color: whitesmoke; /* Kept as-is */
+    margin-left: 10%; /* Moves content slightly right */
+  }
+}
