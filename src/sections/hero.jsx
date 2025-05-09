@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "../style/hero.css"; // Import the updated CSS file;
-import hero1 from "../src/assets/img/Hero 1.png";
-import hero2 from "../src/assets/img/Hero 2.png";
-import hero3 from "../src/assets/img/Hero 3.png";
-import hero4 from "../src/assets/img/Hero 4.png";
+import hero1 from "../assets/img/Hero 1.png";
+import hero2 from "../assets/img/Hero 2.png";
+import hero3 from "../assets/img/Hero 3.png";
+import hero4 from "../assets/img/Hero 4.png";
 
 const images = [
   {
