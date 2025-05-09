@@ -1,24 +1,28 @@
 import React, { useState, useEffect } from "react";
-import "../style/hero.css"; // Import the updated CSS file
+import "../style/hero.css"; // Import the updated CSS file;
+import hero1 from "../src/assets/img/Hero 1.png";
+import hero2 from "../src/assets/img/Hero 2.png";
+import hero3 from "../src/assets/img/Hero 3.png";
+import hero4 from "../src/assets/img/Hero 4.png";
 
 const images = [
   {
-    src: "../src/assets/img/Hero 1.png",
+    src: hero1,
     alt: "First slide",
     imageStyle: { objectPosition: "center top" },
   },
   {
-    src: "../src/assets/img/Hero 2.png",
+    src: hero2,
     alt: "Second slide",
     imageStyle: { objectPosition: "center top" },
   },
   {
-    src: "../src/assets/img/Hero 3.png",
+    src: hero3,
     alt: "Third slide",
     imageStyle: { objectPosition: "center top" },
   },
   {
-    src: "../src/assets/img/Hero 4.png",
+    src: hero4,
     alt: "Third slide",
     imageStyle: { objectPosition: "center top" },
   },

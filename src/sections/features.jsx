@@ -1,6 +1,11 @@
 import React, { useState,useEffect } from "react";
 import { create } from "zustand";
 import "../style/features.css";
+import tImage from "src/assets/img/T.png";
+import nfmImage from "src/assets/img/NFM.png";
+import lrImage from "src/assets/img/LR.png";
+import ebImage from "src/assets/img/EB.png";
+import chfImage from "src/assets/img/CHF.png";
 
 const useCardStore = create((set) => ({
   clickCounts: JSON.parse(localStorage.getItem("cardClickCounts")) || {},
@@ -16,32 +21,32 @@ const cardsData = [
   {
     id: 0,
     title: "Stay Cool All Day Long",
-    image: "src/assets/img/T.png",
+    image: tImage,
     description: "Keeps drinks cold for up to 19 hours (50°F/10°C).",
     large: true,
   },
   {
     id: 1,
     title: "Noise-free mixing",
-    image: "src/assets/img/NFM.png",
+    image: nfmImage,
     description: "Enjoy a smooth, lump-free blend without the noisy blender ball.",
   },
   {
     id: 2,
     title: "Leak-Proof",
-    image: "src/assets/img/LR.png",
+    image: lrImage,
     description: "The secure screw-on lid ensures leakproof sipping convenience.",
   },
   {
     id: 3,
     title: "Easy blending",
-    image: "src/assets/img/EB.png",
+    image: ebImage,
     description: "The twist-off agitator efficiently mixes protein powders and nutrition blends, while keeping ice cubes in place.",
   },
   {
     id: 4,
     title: "Cup Holder Friendly",
-    image: "src/assets/img/CHF.png",
+    image: chfImage,
     description: "Fits car cup holders for convenient sipping on the go.",
   },
 ];
