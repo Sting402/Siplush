@@ -77,11 +77,35 @@ const Faq = () => {
         content: "Ensure the lid is securely twisted and the chug cap is properly tightened. Check that the silicone ring is flat-side out and properly positioned." 
       }
     ],
-    "Product Care": [
-      { title: "How often do I need to wash my Siplush bottle?", content: "For the best hygiene and freshness, we recommend washing your SIPLUSH™ bottle every day. This ensures your bottle stays clean and ready for your next drink!" },
-    { title: "How do I clean the different parts of my SIPLUSH™ Paradise Shaker Bottle?", content: "To clean your SIPLUSH™ bottle, use warm soapy water and a soft sponge. Avoid bleach or abrasive scrubbers, and make sure to air dry or towel dry it thoroughly for the best results." },
-    { title: "Are SIPLUSH™ Paradise Shaker Bottle freezer safe?", content: "Freezing your shaker isn’t a good idea—it can make the stainless steel super cold, which might be uncomfortable to touch and could even cause frostbite. Plus, it’s designed to keep your drinks cold, not to freeze them!" }
+    
+  "Product Care": [
+    {
+    title: "How often do I need to wash my Siplush bottle?",
+      content: "For the best hygiene and freshness, we recommend washing your SIPLUSH™ bottle every day. This ensures your bottle stays clean and ready for your next drink!"
+    },
+    {
+      title: "How do I clean the different parts of my SIPLUSH™ Paradise Shaker Bottle?",
+      content: (
+          <>
+            To clean your SIPLUSH™ bottle, use warm soapy water and a soft sponge. Avoid bleach or abrasive scrubbers, and make sure to air dry or towel dry it thoroughly for the best results.
+            <br /><br />
+            Here's a step-by-step guide:
+            <ul>
+              <li>1. Remove the lid, agitator, and bottle.</li>
+              <li>2. Soak all parts in warm water with mild dish soap.</li>
+              <li>3. Clean with warm soapy water and a soft sponge.</li>
+              <li>4. Avoid bleach or abrasive scrubbers.</li>
+              <li>5. Air dry or towel dry thoroughly before reassembling.</li>
+            </ul>
+          </>
+        )
+    },
+    {
+      title: "Are SIPLUSH™ Paradise Shaker Bottle freezer safe?",
+      content: "Freezing your shaker isn’t a good idea—it can make the stainless steel super cold, which might be uncomfortable to touch and could even cause frostbite. Plus, it’s designed to keep your drinks cold, not to freeze them!"
+    }
   ],
+
     "Orders & Warranty": [
       {
         title: "Does SIPLUSH™ Paradise Shaker Bottle have a warranty?",
@@ -110,6 +134,10 @@ const Faq = () => {
       {
         title: "What inspired the creation of Siplush?",
         content: "SIPLUSH was inspired by the idea of combining \"sip\" (a drinking vessel), \"plus\" (representing quality), and \"lush\" (symbolizing an extraordinary experience). We wanted to create a bottle that not only serves its purpose but enhances your drinking experience with style, quality, and sustainability."
+      },
+      {
+        title: "How did we get our start? ",
+        content: "SIPLUSH began with a mission to create high-quality beverage containers inspired by the Californian lifestyle, designed to keep you energized and hydrated for any activity or daily moment."
       },
       {
         title: "What sets Siplush apart from other brands?",
