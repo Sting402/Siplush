@@ -21,8 +21,8 @@ const Faq = () => {
         content: "The SIPLUSH™ Paradise Shaker Bottle is designed with your safety in mind! It meets Prop 65 and FDA requirements, and we use grade 304 food-grade stainless steel to ensure top quality and peace of mind." 
       },
       { 
-        title: "Do SIPLUSH™ Paradise Shaker Bottle contain lead?", 
-        content: "No, SIPLUSH™ Paradise Shaker Bottles and tumblers are completely lead-free. We prioritize your safety by using only high-quality, food-grade materials that meet strict Prop 65 and FDA requirements." 
+        title: "Have SIPLUSH™ Paradise Shaker Bottle been tested? ", 
+        content: "Yes! At SIPLUSH™, we ensure our products meet all US regulatory requirements, including California Proposition 65 and FDA 21. Our bottles are rigorously tested and validated by trusted labs to meet strict safety guidelines. " 
       },
       { 
         title: "Can I use my SIPLUSH™ Paradise Shaker Bottle for beverages other than water?", 
