@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import FAQItem from "../conpounent/faqitem";
 import SubFAQ from "../conpounent/subfaq";
 import '../style/faq.css'
+import { a } from "framer-motion/client";
 
 const Faq = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -129,6 +130,22 @@ const Faq = () => {
         title: "Can I recycle my Siplush bottle at the end of its life?", 
         content: "Yes, absolutely! Since SIPLUSH™ bottles are made from stainless steel, they are fully recyclable. When your bottle reaches the end of its life, you can recycle it and help reduce environmental waste." 
       },
+      {
+      title: "Can I recycle my SIPLUSH bottle at the end of its life?",
+      content: (
+          <>
+            Yes! SIPLUSH bottles are made from 100% stainless steel and are fully recyclable—but not through curbside bins. To recycle it properly:
+            <ul>
+              <li>1. Remove any non-metal parts (lid, straw, silicone ring)</li>
+              <li>2. Rinse the bottle clean</li>
+              <li>3. Drop it off at a local scrap metal recycling center
+Use <a href="https://www2.calrecycle.ca.gov/BevContainer/RecyclingCenters/" target="_blank" rel="noopener noreferrer">CalRecycle</a>  or  <a href="https://search.earth911.com/" target="_blank" rel="noopener noreferrer">Earth911</a> to find a location near you.</li>
+              
+            </ul>
+             Let your bottle live on—sustainably. ♻️
+          </>
+        )
+    },
     ],
     "Brand Philosophy": [
       {
