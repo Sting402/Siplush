@@ -72,13 +72,13 @@
 }
 
 .large-card .card-image {
-  width: 60%;
+  width: 100%;
   height: auto;
   margin-bottom: 20px;
 }
 
 .card-image {
-  width: 40%;
+  width: 100%;
   height: auto;
   padding: 5px;
   margin-bottom: 17px;

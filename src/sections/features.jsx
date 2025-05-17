@@ -20,16 +20,17 @@ const useCardStore = create((set) => ({
 const cardsData = [
   {
     id: 0,
-    title: "Stay Cool All Day Long",
-    image: tImage,
-    description: "Keeps drinks cold for up to 19 hours (50°F/10°C).",
+    title: "Noise-free mixing",
+    image: nfmImage,
+    description: "Enjoy a smooth, lump-free blend without the noisy blender ball.",
     large: true,
   },
   {
     id: 1,
-    title: "Noise-free mixing",
-    image: nfmImage,
-    description: "Enjoy a smooth, lump-free blend without the noisy blender ball.",
+    title: "Stay Cool All Day",
+    image: tImage,
+    description: "Keeps drinks cold for up to 19 hours (50°F/10°C).",
+    
   },
   {
     id: 2,
@@ -59,10 +60,11 @@ const Card = ({ card, isFlipped, onClick }) => {
       onClick={() => onClick(card.id)}
     >
       <div className="card-inner">
-        <div className="card-front">
-          <img src={card.image} alt={card.title} className="card-image" />
+        <div
+          className="card-front"
+          style={{ backgroundImage: `url(${card.image})`, backgroundSize: "cover", backgroundPosition: "center" }}
+        >
           <span className="plus-icon">+</span>
-          <h3 className="card-title">{card.title}</h3>
         </div>
         <div className="card-back">
           <h3 className="back-title">{card.title}</h3>

@@ -27,15 +27,13 @@ const About = () => {
         </p>
       </div>
       <div className="about-media">
-        {/* Replace src with your image or video */}
+      
         <img
           src={aboutimg}
           alt="SIPLUSH Lifestyle - A lifestyle brand inspired by California"
           className="about-image"
         />
 
-        {/* Example: If using a video instead of an image */}
-        {/* <video src="your-video.mp4" className="about-video" autoPlay loop muted></video> */}
       </div>
     </section>
   );
