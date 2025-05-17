@@ -1,5 +1,5 @@
 import "../style/about.css";
-import aboutimg from "../assets/img/About.png"
+import aboutimg from "../assets/img/About.png";
 
 const About = () => {
   return (
@@ -27,13 +27,11 @@ const About = () => {
         </p>
       </div>
       <div className="about-media">
-      
         <img
           src={aboutimg}
           alt="SIPLUSH Lifestyle - A lifestyle brand inspired by California"
           className="about-image"
         />
-
       </div>
     </section>
   );

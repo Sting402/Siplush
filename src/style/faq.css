@@ -1,5 +1,5 @@
 /* General styles for the accordion container */
-.FAQ-section{
+.FAQ-section {
   background-color: #f7f7f7;
   display: block;
   align-items: center;
@@ -8,13 +8,14 @@
   min-height: 400px;
 }
 
-.faq-header{
+.faq-header {
   text-align: center;
   font-weight: bold;
   color: #000;
   margin-bottom: 30px;
   margin-top: -30px;
 }
+
 .accordion-wrap {
   display: flex;
   flex-direction: column;
@@ -28,7 +29,7 @@
   width: 100%;
   font-family: 'Megante', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   margin: 20px 0;
-  max-width: 1200px; /* Restrict max width */
+  max-width: 1200px;
 }
 
 /* Styles for each accordion item */
@@ -52,12 +53,14 @@
   color: #000;
   font-family: 'Megante', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
-.accordion-item:hover{
-    transform: scale(1.025);
+
+.accordion-item:hover {
+  transform: scale(1.025);
 }
+
 .accordion-header.active {
   background-color: #FEDEC4;
-  
+
 }
 
 /* Accordion content */
@@ -101,6 +104,7 @@
   background-color: #FEDEC4;
   font-family: 'Megante', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
+
 .sub-accordion-header.active {
   background-color: #FEDEC4;
   font-family: 'Megante', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -122,14 +126,15 @@
   margin: 5px 0;
   line-height: 1.6;
 }
-.faq-header{
+
+.faq-header {
   padding-top: 100px;
 }
 
 /* Responsive styles */
 @media (max-width: 2680px) {
   .accordion-wrap {
-      padding: 15px;
+    padding: 15px;
   }
 
   .accordion-header,
@@ -139,17 +144,18 @@
   }
 
   .accordion-header {
-      font-size: 16px;
-      padding: 12px;
+    font-size: 16px;
+    padding: 12px;
   }
 
   .accordion-content {
-      font-size: 13px;
+    font-size: 13px;
   }
 }
+
 @media (max-width: 1200px) {
   .accordion-wrap {
-      padding: 15px;
+    padding: 15px;
   }
 
   .accordion-header,
@@ -159,17 +165,18 @@
   }
 
   .accordion-header {
-      font-size: 16px;
-      padding: 12px;
+    font-size: 16px;
+    padding: 12px;
   }
 
   .accordion-content {
-      font-size: 13px;
+    font-size: 13px;
   }
 }
+
 @media (max-width: 960px) {
   .accordion-wrap {
-      padding: 15px;
+    padding: 15px;
   }
 
   .accordion-header,
@@ -179,12 +186,12 @@
   }
 
   .accordion-header {
-      font-size: 16px;
-      padding: 12px;
+    font-size: 16px;
+    padding: 12px;
   }
 
   .accordion-content {
-      font-size: 13px;
+    font-size: 13px;
   }
 }
 
@@ -201,12 +208,13 @@
 }
 
 @media (max-width: 520px) {
-  .FAQ-section{
+  .FAQ-section {
     width: 100%;
     padding: 0px 0px 0px 50px;
-   
+
     align-items: center;
   }
+
   .accordion-wrap {
     padding: 10px 2%;
     width: 80%;
@@ -218,6 +226,7 @@
     font-size: 12px;
   }
 }
+
 @media (max-width: 480px) {
   .accordion-wrap {
     padding: 10px 2%;

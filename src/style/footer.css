@@ -15,24 +15,28 @@
   justify-content: center;
   background-color: #333;
   color: #fff;
-  text-align:center;
+  text-align: center;
 }
+
 .contact-form {
   display: block;
   justify-content: center;
   background-color: #333;
   color: #fff;
-  text-align:start;
+  text-align: start;
 }
 
-.contact-info, .footer-links, .social-media, .contact-form {
+.contact-info,
+.footer-links,
+.social-media,
+.contact-form {
   margin-top: 0;
   flex-direction: column;
 }
 
-h3{
+h3 {
   color: #fff;
-  padding-bottom:10px;
+  padding-bottom: 10px;
 }
 
 ul {
@@ -61,7 +65,9 @@ label {
   font-size: 80%;
 }
 
-input[type="text"], input[type="email"], textarea {
+input[type="text"],
+input[type="email"],
+textarea {
   width: 95%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -84,14 +90,14 @@ button[type="submit"] {
   justify-content: space-evenly;
   flex-direction: row;
   padding: 0 0 0 8.6%;
-  
+
 }
 
-.icons{
+.icons {
   padding-right: 15%;
 }
 
-.icon{
+.icon {
   width: 30px;
   height: auto;
   padding-right: 10px;
@@ -100,7 +106,8 @@ button[type="submit"] {
   transition: color 0.3s;
 }
 
-.footer-links ul li a, .social-media ul li a {
+.footer-links ul li a,
+.social-media ul li a {
   color: #ffffff;
   text-decoration: none;
   transition: color 0.3s;
@@ -110,14 +117,11 @@ button[type="submit"] {
   color: #FEDEC4;
 }
 
-/* Media Queries */
 /* Responsive styles */
-@media (max-width: 2680px) {
-  
-}
-@media (max-width: 1200px) {
-  
-}
+@media (max-width: 2680px) {}
+
+@media (max-width: 1200px) {}
+
 @media (max-width: 960px) {
   .footer-container {
     max-width: 100%;
@@ -137,7 +141,7 @@ button[type="submit"] {
     flex-direction: column;
     align-items: center;
     gap: 7% !important;
-    
+
   }
 
   .contact-sections {
@@ -145,7 +149,9 @@ button[type="submit"] {
     align-items: center;
   }
 
-  .contact-info, .footer-links, .social-media {
+  .contact-info,
+  .footer-links,
+  .social-media {
     text-align: center;
   }
 }
@@ -162,10 +168,13 @@ button[type="submit"] {
     align-items: center;
   }
 
-  .contact-info, .footer-links, .social-media {
+  .contact-info,
+  .footer-links,
+  .social-media {
     text-align: center;
   }
 }
+
 @media (max-width: 480px) {
   .footer-container {
     width: 100%;
@@ -178,8 +187,9 @@ button[type="submit"] {
     align-items: center;
   }
 
-  .contact-info, .footer-links, .social-media {
+  .contact-info,
+  .footer-links,
+  .social-media {
     text-align: center;
   }
 }
-

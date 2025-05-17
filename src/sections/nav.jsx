@@ -1,11 +1,11 @@
-import React, { useState, useEffect, useRef } from 'react';
-import '../style/nav.css';
-import logo from '../assets/img/Logo-Color-Final.png';
+import React, { useState, useEffect, useRef } from "react";
+import "../style/nav.css";
+import logo from "../assets/img/Logo-Color-Final.png";
 
 const messages = [
   "🔥 Limited-Time Offer! 🔥 Get 10% OFF your ultimate stainless steel shaker!💪 ",
   "🔥 New Arrival! Check out our latest products!  ",
-  "🔥 Don't miss out on our exclusive deals ! 🛒  "
+  "🔥 Don't miss out on our exclusive deals ! 🛒  ",
 ];
 
 const Navbar = () => {
@@ -22,8 +22,11 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
-      setIsNavVisible(prevScrollPos > currentScrollPos || currentScrollPos < 100);
-      const heroSectionTop = document.querySelector('.hero-slide img')?.offsetTop || 650;
+      setIsNavVisible(
+        prevScrollPos > currentScrollPos || currentScrollPos < 100
+      );
+      const heroSectionTop =
+        document.querySelector(".hero-slide img")?.offsetTop || 650;
       setIsNavTransparent(currentScrollPos < heroSectionTop);
       setPrevScrollPos(currentScrollPos);
 
@@ -35,8 +38,8 @@ const Navbar = () => {
       setIsMenuOpen(false);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollPos]);
 
   useEffect(() => {
@@ -46,7 +49,7 @@ const Navbar = () => {
       setNavOffset(0);
     }
   }, [showPromo]);
-  
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentMessageIndex((prevIndex) => (prevIndex + 1) % messages.length);
@@ -55,35 +58,49 @@ const Navbar = () => {
     return () => clearInterval(interval);
   }, []);
 
-
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    
     <section className="navbar-section">
       <>
         {showPromo && (
           <div className="promo-section" ref={promoRef}>
-          <div className="slideshow">
-            <p>{messages[currentMessageIndex]}</p>
+            <div className="slideshow">
+              <p>{messages[currentMessageIndex]}</p>
+            </div>
+            <div>
+              <a
+                href="https://www.amazon.com/stores/SIPLUSH/page/36C74EDC-501B-4CE3-B283-573EB0C97A25?ref_=ast_bln"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="shop-now"
+              >
+                {" "}
+                Shop Now!{" "}
+              </a>
+            </div>
           </div>
-          <div><a href="https://www.amazon.com/stores/SIPLUSH/page/36C74EDC-501B-4CE3-B283-573EB0C97A25?ref_=ast_bln" target="_blank" rel="noopener noreferrer" className="shop-now"> Shop Now! </a></div>
-        </div>
         )}
         <nav
-          className={`navbar ${isNavVisible ? 'visible' : 'hidden'} ${isNavTransparent ? 'transparent' : ''}`}
-          style={{ paddingTop: navOffset }} ref={navRef}
+          className={`navbar ${isNavVisible ? "visible" : "hidden"} ${
+            isNavTransparent ? "transparent" : ""
+          }`}
+          style={{ paddingTop: navOffset }}
+          ref={navRef}
         >
           <div className="logo">
-            <img src={logo} alt="Siplush Logo"/>
-
+            <img src={logo} alt="Siplush Logo" />
           </div>
-          <div className="menu-toggle" onClick={toggleMenu} aria-expanded={isMenuOpen}>
+          <div
+            className="menu-toggle"
+            onClick={toggleMenu}
+            aria-expanded={isMenuOpen}
+          >
             <div></div>
             <div></div>
             <div></div>
           </div>
-          <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
+          <div className={`nav-links ${isMenuOpen ? "active" : ""}`}>
             <ul>
               <li className="nav-link">
                 <a href="#About" data-content="Siplush">
@@ -114,8 +131,8 @@ const Navbar = () => {
             </ul>
           </div>
         </nav>
-    </>
-      </section>
+      </>
+    </section>
   );
 };
 

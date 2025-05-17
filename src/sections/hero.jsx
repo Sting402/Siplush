@@ -40,7 +40,7 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, []);
   const handleButtonClick = (url) => {
-    window.open(url, '_blank'); // Open the URL in a new tab
+    window.open(url, "_blank"); // Open the URL in a new tab
   };
   return (
     <section className="hero-section">
@@ -52,11 +52,11 @@ const Hero = () => {
               index === currentIndex ? "active" : "inactive"
             }`}
           >
-            <img src={image.src} alt={image.alt}  style={images.imagesStyle} />
+            <img src={image.src} alt={image.alt} style={images.imagesStyle} />
           </div>
         ))}
       </div>
-      <div className="text-container"  style={images.textStyle}>
+      <div className="text-container" style={images.textStyle}>
         <h2>{images[currentIndex].caption}</h2>
         <p>{images[currentIndex].subCaption}</p>
         {/* <button onClick= {()=>handleButtonClick("https://www.amazon.com/stores/SIPLUSH/page/36C74EDC-501B-4CE3-B283-573EB0C97A25?ref_=ast_bln")}>Shop Now</button> */}

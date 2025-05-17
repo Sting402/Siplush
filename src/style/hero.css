@@ -33,7 +33,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top; /* fallback if inline style fails */
+  object-position: center top;
   max-width: 100%;
   max-height: 100%;
 }
@@ -64,7 +64,7 @@
   cursor: pointer;
   font-size: 1rem;
   transition: background-color 0.3s ease;
- 
+
 }
 
 /* Responsive Design */
@@ -73,22 +73,26 @@
     min-height: 80vh;
   }
 }
+
 @media (max-width: 768px) {
   .hero-section {
     min-height: 60vh;
-    
+
   }
 }
+
 @media (max-width: 680px) {
   .hero-section {
     min-height: 40vh;
   }
 }
+
 @media (max-width: 520px) {
   .hero-section {
     min-height: 20vh;
   }
 }
+
 @media (max-width: 400px) {
   .hero-section {
     min-height: 20vh;

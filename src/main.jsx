@@ -5,7 +5,6 @@ import Navbar from './sections/nav'
 import Hero from './sections/hero'
 import About from './sections/about'
 import Feat from './sections/features'
-import CTA from './sections/cta'
 import Bom from './sections/bom'
 import JoinBrandsSection from './sections/join'
 import CTA2 from './sections/cta2'
@@ -24,7 +23,6 @@ createRoot(document.getElementById('root')).render(
     <Hero/>
     <About/>
     <Feat/>
-    {/* <CTA/> */}
     <Bom/>
     <JoinBrandsSection/>
     <Faq/>

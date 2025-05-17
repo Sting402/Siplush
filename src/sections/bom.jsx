@@ -1,5 +1,5 @@
 import "../style/bom.css";
-import bom from "../assets/video/BOM-clip.mp4"
+import bom from "../assets/video/BOM-clip.mp4";
 
 const Bom = () => {
   return (

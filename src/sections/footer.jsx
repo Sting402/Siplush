@@ -1,9 +1,9 @@
-import React from 'react';
-import { useForm } from 'react-hook-form';
-import { z } from 'zod';
-import { zodResolver } from '@hookform/resolvers/zod';
+import React from "react";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
 import { FaMeta, FaInstagram, FaXTwitter } from "react-icons/fa6";
-import '../style/footer.css';
+import "../style/footer.css";
 
 const schema = z.object({
   name: z.string().min(1, "Name is required"),
@@ -12,7 +12,12 @@ const schema = z.object({
 });
 
 const Footer = () => {
-  const { register, handleSubmit, formState: { errors }, reset } = useForm({
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm({
     resolver: zodResolver(schema),
   });
 
@@ -43,33 +48,33 @@ const Footer = () => {
         <div className="footer-links">
           <h3>Quick Links</h3>
           <ul>
-              <li >
-                <a href="#About" data-content="Siplush">
-                  Brand
-                </a>
-              </li>
+            <li>
+              <a href="#About" data-content="Siplush">
+                Brand
+              </a>
+            </li>
 
-              <li >
-                <a href="#Featuressection" data-content="feature-section">
-                  Features
-                </a>
-              </li>
-              <li >
-                <a href="#BOM" data-content="lifestyle-section">
-                  Paradise Shaker
-                </a>
-              </li>
-              <li>
-                <a href="#JoinBrandsSection" data-content="JoinBrandsSection">
-                  Testimony
-                </a>
-              </li>
-              <li>
-                <a href="#FAQ" data-content="What you wonder">
-                  FAQ
-                </a>
-              </li>
-            </ul>
+            <li>
+              <a href="#Featuressection" data-content="feature-section">
+                Features
+              </a>
+            </li>
+            <li>
+              <a href="#BOM" data-content="lifestyle-section">
+                Paradise Shaker
+              </a>
+            </li>
+            <li>
+              <a href="#JoinBrandsSection" data-content="JoinBrandsSection">
+                Testimony
+              </a>
+            </li>
+            <li>
+              <a href="#FAQ" data-content="What you wonder">
+                FAQ
+              </a>
+            </li>
+          </ul>
         </div>
         <div className="contact-info">
           <h3>Contact Info</h3>
@@ -81,17 +86,31 @@ const Footer = () => {
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="form-group">
               <label htmlFor="name">Name:</label>
-              <input type="text" id="name" {...register("name")} placeholder="John Doe" />
+              <input
+                type="text"
+                id="name"
+                {...register("name")}
+                placeholder="John Doe"
+              />
               {errors.name && <p>{errors.name.message}</p>}
             </div>
             <div className="form-group">
               <label htmlFor="email">Email:</label>
-              <input type="email" id="email" {...register("email")} placeholder="Example@email.com" />
+              <input
+                type="email"
+                id="email"
+                {...register("email")}
+                placeholder="Example@email.com"
+              />
               {errors.email && <p>{errors.email.message}</p>}
             </div>
             <div className="form-group">
               <label htmlFor="message">Message:</label>
-              <textarea id="message" {...register("message")} placeholder="Your message" />
+              <textarea
+                id="message"
+                {...register("message")}
+                placeholder="Your message"
+              />
               {errors.message && <p>{errors.message.message}</p>}
             </div>
             <button type="submit">Send</button>
@@ -99,8 +118,10 @@ const Footer = () => {
         </div>
       </div>
       <div className="copyright">
-        <p>&copy; {new Date().getFullYear()} Siplush Brand. All rights reserved.</p>
-        <div className='icons'>
+        <p>
+          &copy; {new Date().getFullYear()} Siplush Brand. All rights reserved.
+        </p>
+        <div className="icons">
           {/* <a href="#" target="_blank" rel="noopener noreferrer"><FaMeta className="icon" /></a> */}
           {/* <a href="#" target="_blank" rel="noopener noreferrer"><FaInstagram className="icon" /></a> */}
           {/* <a href="#" target="_blank" rel="noopener noreferrer"><FaXTwitter className="icon" /></a> */}
