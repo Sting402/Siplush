@@ -3,7 +3,7 @@ import "../style/nav.css";
 import logo from "../assets/img/Logo-Color-Final.png";
 
 const messages = [
-  "🔥 Limited-Time Offer! 🔥 Get 10% OFF your ultimate stainless steel shaker!💪 ",
+  // "🔥 Limited-Time Offer! 🔥 Get 10% OFF your ultimate stainless steel shaker!💪 ",
   "🔥 New Arrival! Check out our latest products!  ",
   "🔥 Don't miss out on our exclusive deals ! 🛒  ",
 ];
